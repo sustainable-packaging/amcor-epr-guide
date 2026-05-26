@@ -1,18 +1,15 @@
 import streamlit as st
 
 # ── PAGE CONFIG ──────────────────────────────────────────
-
 st.set_page_config(
-page_title=“Amcor EPR Customer Guide 2026”,
-page_icon=“https://www.amcor.com/favicon.ico”,
-layout=“wide”,
-initial_sidebar_state=“collapsed”
+    page_title="Amcor EPR Customer Guide 2026",
+    page_icon="https://www.amcor.com/favicon.ico",
+    layout="wide",
+    initial_sidebar_state="collapsed"
 )
 
 # ── CUSTOM CSS ───────────────────────────────────────────
-
-st.markdown(”””
-
+st.markdown("""
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap');
 
@@ -712,13 +709,10 @@ st.markdown(”””
   /* CENTER HEADER */
   .center-header { text-align: center; margin-bottom: 48px; }
 </style>
-
-“””, unsafe_allow_html=True)
+""", unsafe_allow_html=True)
 
 # ── NAV ─────────────────────────────────────────────────
-
-st.markdown(”””
-
+st.markdown("""
 <div class="nav-bar">
   <div class="nav-brand">Amcor</div>
   <div class="nav-links">
@@ -734,9 +728,7 @@ st.markdown(”””
 """, unsafe_allow_html=True)
 
 # ── HERO ─────────────────────────────────────────────────
-
-st.markdown(”””
-
+st.markdown("""
 <div class="hero">
   <div class="hero-eyebrow">Extended Producer Responsibility · Customer Guide 2026</div>
   <div class="hero-title">Your Packaging Choices<br>Now Have a <span>Cost</span></div>
@@ -763,10 +755,8 @@ st.markdown(”””
 """, unsafe_allow_html=True)
 
 # ── EPR SECTION ──────────────────────────────────────────
-
-st.markdown(’<div class="section section-dark" id="epr">’, unsafe_allow_html=True)
-st.markdown(”””
-
+st.markdown('<div class="section section-dark" id="epr">', unsafe_allow_html=True)
+st.markdown("""
 <div class="center-header">
   <span class="section-tag">What Is EPR</span>
   <div class="section-title">You Now Pay for Your Packaging Waste</div>
@@ -793,59 +783,57 @@ st.markdown(”””
 
 col1, col2 = st.columns(2)
 with col1:
-st.markdown(”””
-<span class="section-tag">Where These Laws Apply</span>
-<div class="region-card">
-<div>
-<div class="region-name">United States</div>
-<div class="region-desc">State by state, growing fast. Colorado, California, Maine, and Oregon already have active programs.</div>
-</div>
-<div class="region-date">Now → 2027</div>
-</div>
-<div class="region-card">
-<div>
-<div class="region-name">Canada</div>
-<div class="region-desc">99.9% of Canadians covered. Most provinces transitioning to fully producer-funded programs.</div>
-</div>
-<div class="region-date">2025 – 2027</div>
-</div>
-<div class="region-card" style="border-color:rgba(245,166,35,0.3);">
-<div>
-<div class="region-name">Europe</div>
-<div class="region-desc">Strictest globally — PPWR. Non-compliant packaging cannot be sold in Europe at all.</div>
-</div>
-<div class="region-date region-date-amber">Aug 2026</div>
-</div>
-“””, unsafe_allow_html=True)
+    st.markdown("""
+    <span class="section-tag">Where These Laws Apply</span>
+    <div class="region-card">
+      <div>
+        <div class="region-name">United States</div>
+        <div class="region-desc">State by state, growing fast. Colorado, California, Maine, and Oregon already have active programs.</div>
+      </div>
+      <div class="region-date">Now → 2027</div>
+    </div>
+    <div class="region-card">
+      <div>
+        <div class="region-name">Canada</div>
+        <div class="region-desc">99.9% of Canadians covered. Most provinces transitioning to fully producer-funded programs.</div>
+      </div>
+      <div class="region-date">2025 – 2027</div>
+    </div>
+    <div class="region-card" style="border-color:rgba(245,166,35,0.3);">
+      <div>
+        <div class="region-name">Europe</div>
+        <div class="region-desc">Strictest globally — PPWR. Non-compliant packaging cannot be sold in Europe at all.</div>
+      </div>
+      <div class="region-date region-date-amber">Aug 2026</div>
+    </div>
+    """, unsafe_allow_html=True)
 
 with col2:
-st.markdown(”””
-<span class="section-tag">Europe — PPWR</span>
-<div style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:800;color:white;text-transform:uppercase;margin-bottom:10px;">The Strictest Standard Globally</div>
-<div style="font-size:13px;color:rgba(255,255,255,0.6);line-height:1.7;margin-bottom:16px;">If you sell in Europe, the Packaging and Packaging Waste Regulation (PPWR) is already in force. Non-compliant packaging cannot be sold in Europe — this goes beyond fees.</div>
-<div class="urgency-box">
-<div class="urgency-tag">Active Right Now</div>
-<div class="urgency-date">12 August 2026</div>
-<div class="urgency-text">PPWR provisions are in force. Packaging decisions for European markets need to be made now — not later.</div>
-</div>
-<div class="ppwr-item"><span class="ppwr-marker">By 2030 —</span> all packaging sold in Europe must be recyclable</div>
-<div class="ppwr-item"><span class="ppwr-marker">Banned —</span> single-use plastic sachets and individual condiment portions</div>
-<div class="ppwr-item"><span class="ppwr-marker">Required —</span> brands must increase recycled content and reduce new plastic use</div>
-<div class="ppwr-item"><span class="ppwr-marker">Restricted —</span> certain chemicals in food-contact packaging above set limits</div>
-<div class="key-box">
-<div class="key-box-tag">Key Takeaway</div>
-<div class="key-box-text">What Europe requires today is where U.S. and Canadian regulations are heading. Planning ahead protects your brand and your bottom line.</div>
-</div>
-“””, unsafe_allow_html=True)
+    st.markdown("""
+    <span class="section-tag">Europe — PPWR</span>
+    <div style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:800;color:white;text-transform:uppercase;margin-bottom:10px;">The Strictest Standard Globally</div>
+    <div style="font-size:13px;color:rgba(255,255,255,0.6);line-height:1.7;margin-bottom:16px;">If you sell in Europe, the Packaging and Packaging Waste Regulation (PPWR) is already in force. Non-compliant packaging cannot be sold in Europe — this goes beyond fees.</div>
+    <div class="urgency-box">
+      <div class="urgency-tag">Active Right Now</div>
+      <div class="urgency-date">12 August 2026</div>
+      <div class="urgency-text">PPWR provisions are in force. Packaging decisions for European markets need to be made now — not later.</div>
+    </div>
+    <div class="ppwr-item"><span class="ppwr-marker">By 2030 —</span>&nbsp;all packaging sold in Europe must be recyclable</div>
+    <div class="ppwr-item"><span class="ppwr-marker">Banned —</span>&nbsp;single-use plastic sachets and individual condiment portions</div>
+    <div class="ppwr-item"><span class="ppwr-marker">Required —</span>&nbsp;brands must increase recycled content and reduce new plastic use</div>
+    <div class="ppwr-item"><span class="ppwr-marker">Restricted —</span>&nbsp;certain chemicals in food-contact packaging above set limits</div>
+    <div class="key-box">
+      <div class="key-box-tag">Key Takeaway</div>
+      <div class="key-box-text">What Europe requires today is where U.S. and Canadian regulations are heading. Planning ahead protects your brand and your bottom line.</div>
+    </div>
+    """, unsafe_allow_html=True)
 
-st.markdown(’</div>’, unsafe_allow_html=True)
-st.markdown(’<div class="divider"></div>’, unsafe_allow_html=True)
+st.markdown('</div>', unsafe_allow_html=True)
+st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
 
 # ── TCO SECTION ──────────────────────────────────────────
-
-st.markdown(’<div class="section section-light" id="tco">’, unsafe_allow_html=True)
-st.markdown(”””
-
+st.markdown('<div class="section section-light" id="tco">', unsafe_allow_html=True)
+st.markdown("""
 <div class="center-header">
   <span class="section-tag" style="color:var(--blue);">Total Cost of Ownership</span>
   <div class="section-title-dark">The Real Price of Your Packaging</div>
@@ -885,10 +873,8 @@ st.markdown('</div>', unsafe_allow_html=True)
 st.markdown('<div class="divider-light"></div>', unsafe_allow_html=True)
 
 # ── SOURCE REDUCTION ─────────────────────────────────────
-
-st.markdown(’<div class="section section-mid" id="source-reduction">’, unsafe_allow_html=True)
-st.markdown(”””
-
+st.markdown('<div class="section section-mid" id="source-reduction">', unsafe_allow_html=True)
+st.markdown("""
 <div class="center-header">
   <span class="section-tag" style="color:var(--blue);">Source Reduction</span>
   <div class="section-title-dark">Less Packaging. Lower Fee.</div>
@@ -902,10 +888,8 @@ st.markdown(”””
 st.markdown('</div>', unsafe_allow_html=True)
 
 # ── LOWER YOUR FEE ───────────────────────────────────────
-
-st.markdown(’<div class="section section-light" id="lower-fee">’, unsafe_allow_html=True)
-st.markdown(”””
-
+st.markdown('<div class="section section-light" id="lower-fee">', unsafe_allow_html=True)
+st.markdown("""
 <div class="center-header">
   <span class="section-tag" style="color:var(--blue);">Action Guide</span>
   <div class="section-title-dark">4 Ways to Lower Your Fee</div>
@@ -915,30 +899,28 @@ st.markdown(”””
 
 col1, col2 = st.columns(2)
 steps = [
-(“01”, “Switch to Recyclable Packaging”, “The more recyclable your packaging is, the better it scores under EPR fee calculations — directly lowering your fee.”),
-(“02”, “Use Packaging With Recycled Content”, “Packaging containing post-consumer recycled material qualifies for fee reductions in most U.S. states, Canadian provinces, and under PPWR in Europe.”),
-(“03”, “Reduce Packaging Weight”, “EPR fees are based on weight. Less material means lower weight means a lower fee baseline across every single unit you sell.”),
-(“04”, “Choose Single-Material Packaging”, “Mixed materials are harder to recycle and score poorly. Single-material packaging scores better and earns a lower fee.”),
+    ("01", "Switch to Recyclable Packaging", "The more recyclable your packaging is, the better it scores under EPR fee calculations — directly lowering your fee."),
+    ("02", "Use Packaging With Recycled Content", "Packaging containing post-consumer recycled material qualifies for fee reductions in most U.S. states, Canadian provinces, and under PPWR in Europe."),
+    ("03", "Reduce Packaging Weight", "EPR fees are based on weight. Less material means lower weight means a lower fee baseline across every single unit you sell."),
+    ("04", "Choose Single-Material Packaging", "Mixed materials are harder to recycle and score poorly. Single-material packaging scores better and earns a lower fee."),
 ]
 for i, (num, title, desc) in enumerate(steps):
-with col1 if i % 2 == 0 else col2:
-st.markdown(f”””
-<div class="step-card">
-<div class="step-num">{num}</div>
-<div>
-<div class="step-title">{title}</div>
-<div class="step-desc">{desc}</div>
-</div>
-</div>
-“””, unsafe_allow_html=True)
+    with col1 if i % 2 == 0 else col2:
+        st.markdown(f"""
+        <div class="step-card">
+          <div class="step-num">{num}</div>
+          <div>
+            <div class="step-title">{title}</div>
+            <div class="step-desc">{desc}</div>
+          </div>
+        </div>
+        """, unsafe_allow_html=True)
 
-st.markdown(’</div>’, unsafe_allow_html=True)
+st.markdown('</div>', unsafe_allow_html=True)
 
 # ── AMCOR HELPS ──────────────────────────────────────────
-
-st.markdown(’<div class="section section-mid" id="amcor-helps">’, unsafe_allow_html=True)
-st.markdown(”””
-
+st.markdown('<div class="section section-mid" id="amcor-helps">', unsafe_allow_html=True)
+st.markdown("""
 <div class="center-header">
   <span class="section-tag" style="color:var(--blue);">How Amcor Helps</span>
   <div class="section-title-dark">Packaging That Lowers Your Fee</div>
@@ -948,39 +930,36 @@ st.markdown(”””
 
 col1, col2 = st.columns(2)
 with col1:
-st.markdown(”””
-<div class="pcr-box">
-<div class="pcr-tag">Amcor’s PCR Achievement</div>
-<div class="pcr-stat-row"><b>10% PCR</b> global target achieved — 218,000 metric tons of recycled plastic used</div>
-<div class="pcr-stat-row"><b>100%</b> recycled plastic possible depending on your packaging needs</div>
-<div class="pcr-stat-row"><b>96%</b> of rigid packaging portfolio designed for recyclability</div>
-</div>
-“””, unsafe_allow_html=True)
+    st.markdown("""
+    <div class="pcr-box">
+      <div class="pcr-tag">Amcor's PCR Achievement</div>
+      <div class="pcr-stat-row"><b>10% PCR</b> global target achieved — 218,000 metric tons of recycled plastic used</div>
+      <div class="pcr-stat-row"><b>100%</b> recycled plastic possible depending on your packaging needs</div>
+      <div class="pcr-stat-row"><b>96%</b> of rigid packaging portfolio designed for recyclability</div>
+    </div>
+    """, unsafe_allow_html=True)
 
 with col2:
-for title, desc in [
-(“Lowers Your EPR Fee”, “Packaging with recycled content scores better under EPR fee calculations — directly reducing how much you pay per unit.”),
-(“Meets Requirements Globally”, “PCR content satisfies recycled content requirements in the U.S., Canada, and under PPWR in Europe — one solution across all markets.”),
-(“Less New Plastic Used”, “Every unit of PCR replaces new plastic — reducing your environmental footprint and supporting a circular economy.”),
-]:
-st.markdown(f”””
-<div class="benefit-card">
-<div class="benefit-title">{title}</div>
-<div class="benefit-desc">{desc}</div>
-</div>
-“””, unsafe_allow_html=True)
+    for title, desc in [
+        ("Lowers Your EPR Fee", "Packaging with recycled content scores better under EPR fee calculations — directly reducing how much you pay per unit."),
+        ("Meets Requirements Globally", "PCR content satisfies recycled content requirements in the U.S., Canada, and under PPWR in Europe — one solution across all markets."),
+        ("Less New Plastic Used", "Every unit of PCR replaces new plastic — reducing your environmental footprint and supporting a circular economy."),
+    ]:
+        st.markdown(f"""
+        <div class="benefit-card">
+          <div class="benefit-title">{title}</div>
+          <div class="benefit-desc">{desc}</div>
+        </div>
+        """, unsafe_allow_html=True)
 
-st.markdown(”””<div style="text-align:center;margin-top:32px;">
-<a href="https://www.amcor.com/sustainability" target="_blank" class="cta-btn">Explore Amcor’s Sustainability Solutions</a>
-
+st.markdown("""<div style="text-align:center;margin-top:32px;">
+  <a href="https://www.amcor.com/sustainability" target="_blank" class="cta-btn">Explore Amcor's Sustainability Solutions</a>
 </div>""", unsafe_allow_html=True)
 st.markdown('</div>', unsafe_allow_html=True)
 
 # ── DOS AND DONTS ────────────────────────────────────────
-
-st.markdown(’<div class="section section-light" id="dos-donts">’, unsafe_allow_html=True)
-st.markdown(”””
-
+st.markdown('<div class="section section-light" id="dos-donts">', unsafe_allow_html=True)
+st.markdown("""
 <div class="center-header">
   <span class="section-tag" style="color:var(--blue);">Quick Reference</span>
   <div class="section-title-dark">Dos & Don'ts</div>
@@ -1006,9 +985,7 @@ st.markdown(”””
 st.markdown('</div>', unsafe_allow_html=True)
 
 # ── REMEMBER ─────────────────────────────────────────────
-
-st.markdown(”””
-
+st.markdown("""
 <div class="remember-section">
   <div class="remember-tag">Remember</div>
   <div class="remember-title">Reduce your EPR fees, meet compliance,<br>and build a more <span>sustainable brand</span> — with Amcor</div>
@@ -1019,9 +996,7 @@ st.markdown(”””
 """, unsafe_allow_html=True)
 
 # ── FOOTER ───────────────────────────────────────────────
-
-st.markdown(”””
-
+st.markdown("""
 <div class="footer">
   <div class="footer-brand">Amcor</div>
   <div class="footer-note">Customer Guide · Extended Producer Responsibility · 2026</div>
